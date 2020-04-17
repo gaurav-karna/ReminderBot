@@ -1,4 +1,4 @@
-# Reminder Bot  
+# Reminder Bot :robot:
   
 A simple autonomous script paired with the Twilio API to send a reminder once a day.  
   
