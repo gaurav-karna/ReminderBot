@@ -20,7 +20,7 @@ def compile_joke():
 
 
 def send_text(text):
-    text = compile_joke() + text    # prepend joke to message
+    text = compile_joke() + text + '\n\nMade with love, at https://github.com/gaurav-karna/ReminderBot <3'  # prepend joke to message
     client = Client(account_sid_secret, auth_token_secret)
     message = client.messages \
                 .create(
