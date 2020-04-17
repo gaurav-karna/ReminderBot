@@ -16,8 +16,7 @@ def compile_joke():
     data = requests.get(
         url='https://official-joke-api.appspot.com/jokes/general/random'
     ).json()
-
-    print('Daily Reminder!\n{}...\n{}\n'.format(data[0]['setup'], data[0]['punchline']))
+    return 'Daily Reminder!\n{}...\n{}\n'.format(data[0]['setup'], data[0]['punchline'])
 
 
 def send_text(text):
